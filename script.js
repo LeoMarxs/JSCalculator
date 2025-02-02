@@ -42,3 +42,7 @@ function addToHistory(expression, result) {
     listItem.textContent = `${expression} = ${result}`;
     historyList.prepend(listItem);
 }
+
+function clearHistory() {
+    document.getElementById('history-list').innerHTML = '';
+}
