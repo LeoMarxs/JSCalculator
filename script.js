@@ -24,3 +24,21 @@ function calculate() {
         display.value = 'Erro';
     }
 }
+
+function calculatePercentage() {
+    let display = document.getElementById('display');
+    try {
+        let result = eval(display.value) / 100;
+        addToHistory(display.value + '%', result);
+        display.value = result;
+    } catch (error) {
+        display.value = 'Erro';
+    }
+}
+
+function addToHistory(expression, result) {
+    let historyList = document.getElementById('history-list');
+    let listItem = document.createElement('li');
+    listItem.textContent = `${expression} = ${result}`;
+    historyList.prepend(listItem);
+}
