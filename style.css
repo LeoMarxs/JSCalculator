@@ -14,7 +14,7 @@ body {
 }
 
 .calculator, .history {
-    color: aliceblue;
+    color: white;
     background: #333333;
     padding: 20px;
     border-radius: 10px;
@@ -32,10 +32,11 @@ body {
     font-size: 1.5em;
     text-align: right;
     margin-bottom: 10px;
+    color: black;
 }
 
 .buttons {
-    background-color: #1A1A1A;
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -46,6 +47,8 @@ button {
     padding: 15px;
     font-size: 1.2em;
     cursor: pointer;
+    background-color: #1A1A1A;
+    color: white;
 }
 
 .history-list {
